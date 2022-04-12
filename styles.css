@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #211252;
+  color: #f9f871;
+}
+/*tic tac toe styling*/
+.text {
+  text-align: center;
+  background-color: #ba3d5f;
+  /*creating text gradient*/
+  background-image: linear-gradient(to right, #f9f871, #ba3d5f);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/*game board is a 3x3 grid with a border*/
+/*inside the border is a cell*/
+.game-board {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 5px;
+  border: 10px solid #771d61;
+  border-radius: 10px;
+  margin: auto;
+  width: 400px;
+  height: 360px;
+  padding: 5px;
+}
+/*cells are the individual squares on the board*/
+.cell {
+  border: 1px solid rgb(244, 229, 250);
+  border-radius: 20px;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  background-image: linear-gradient(to right, #ba3d5f 20%, #771d61);
+}
+.game-controls {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 10px;
+}
+.game-controls button {
+  border: 3px solid #540a42;
+  border-radius: 10px;
+  padding: 10px;
+  background-image: linear-gradient(to right, #ba3d5f 20%, #771d61);
+  font-weight: bolder;
+}
+.game-controls button:hover {
+  background-image: linear-gradient(to right, #f9f871 20%, #ba3d5f);
+  color: #540a42;
+  transition: 0.5s;
+}
+
+.results {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 90px;
+}
+
+.annoucement {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 50px;
+}
